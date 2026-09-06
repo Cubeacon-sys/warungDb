@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --color-warung-bg: #f8fafc;
+    --color-warung-text: #0f172a;
+}
+
+@layer base {
+    body {
+	background-color: var(--color-warung-bg);
+	color: var(--color-warung-text);
+	font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+}
