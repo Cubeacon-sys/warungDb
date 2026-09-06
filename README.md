@@ -1,16 +1,52 @@
-# React + Vite
+# Pusat Inventaris Warung
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplikasi manajemen inventaris berbasis web yang dirancang untuk memantau stok, mengelola katalog produk, serta memberikan indikasi otomatis untuk produk dengan stok menipis. Dibuat untuk keperluan presentasi KIK (Kreativitas, Inovasi, dan Kewirausahaan).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Fitur Utama
 
-## React Compiler
+- Autentikasi Pengguna: Sistem autentikasi terintegrasi menggunakan Supabase Auth.
+- Ringkasan Metrik: Pemantauan total jenis barang, total unit stok, dan jumlah barang dengan stok menipis (< 5 unit).
+- Pengelolaan Data (CRUD):
+  - Penambahan produk baru beserta rincian modal, harga jual, dan stok.
+  - Pembaruan (edit) data produk secara langsung.
+  - Penghapusan data produk dari katalog.
+- Katalog Inventaris: Tampilan daftar barang terstruktur lengkap dengan format mata uang rupiah.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## Teknologi
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Frontend: React.js (Vite)
+- Styling: Tailwind CSS
+- Backend & Database: Supabase (PostgreSQL & Auth)
+
+---
+
+## Panduan Instalasi Lokal
+
+### 1. Prasyarat
+Pastikan Node.js dan npm sudah terinstal pada perangkat Anda.
+
+### 2. Kloning Repositori
+git clone https://github.com/USERNAME/NAMA_REPO.git
+cd NAMA_REPO
+
+### 3. Instal Dependensi
+npm install
+
+### 4. Konfigurasi Environment Variable
+Buat file `.env.local` pada direktori utama project dan masukan kredensial Supabase Anda:
+
+VITE_SUPABASE_URL=https://URL_SUPABASE_ANDA.supabase.co
+VITE_SUPABASE_ANON_KEY=ANON_KEY_SUPABASE_ANDA
+
+### 5. Jalankan Aplikasi
+npm run dev
+
+---
+
+## Pengembang
+
+Wisam Yassar Mahardika - KIK (Kreativitas, Inovasi, dan Kewirausahaan)

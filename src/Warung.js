@@ -1,3 +1,9 @@
+/**
+ * Pusat Inventaris Warung
+ * Copyright (c) 2026 Wisam Yassar Mahardika
+ * Licensed under the MIT License
+ */
+
 import { useState, useEffect } from 'react'
 import { supabase } from './supabase'
 
