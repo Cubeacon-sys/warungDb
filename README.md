@@ -30,8 +30,8 @@ Aplikasi manajemen inventaris berbasis web yang dirancang untuk memantau stok, m
 Pastikan Node.js dan npm sudah terinstal pada perangkat Anda.
 
 ### 2. Kloning Repositori
-    git clone https://github.com/USERNAME/NAMA_REPO.git
-    cd NAMA_REPO
+    git clone https://github.com/USERNAME/WarungDb.git
+    cd WarungDb
 
 ### 3. Instal Dependensi
     npm install

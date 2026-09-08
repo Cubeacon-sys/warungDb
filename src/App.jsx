@@ -15,7 +15,7 @@ export default function App() {
 
     const handleLogout = async () => {
 	const { error } = await supabase.auth.signOut()
-	if (error) console.error('Log out Error: ', erros.message)
+	if (error) console.error('Log out Error: ', error.message)
     }
 
     const {
